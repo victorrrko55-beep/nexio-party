@@ -34,9 +34,9 @@
     color:var(--ink);
     min-height:100vh;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
-    padding:28px 16px;
+    padding:48px 16px 40px;
     background:
       radial-gradient(circle at 15% 20%, rgba(255,84,112,.18), transparent 40%),
       radial-gradient(circle at 85% 15%, rgba(46,196,182,.20), transparent 42%),
@@ -62,13 +62,14 @@
   .device{
     position:relative;z-index:1;
     width:100%;max-width:600px;
+    margin-top:16px;
     animation:pop .7s cubic-bezier(.2,1.4,.4,1) both;
   }
   /* 은빛 메탈 베젤 */
   .bezel{
     position:relative;
     border-radius:30px;
-    padding:34px 24px;
+    padding:52px 24px 34px;
     overflow:visible;
     background:
       linear-gradient(145deg,#f6f7f9 0%,#cfd4db 18%,#aeb4bd 50%,#cfd4db 82%,#eef0f3 100%);
@@ -131,8 +132,8 @@
     border-radius:8px;
     border:1px solid rgba(43,27,61,.12);
     box-shadow:0 10px 22px -8px rgba(43,27,61,.45);
-    transform:rotate(-4deg);
-    margin:16px 0 24px;
+    transform:rotate(-2deg);
+    margin:12px 0 20px;
     transition:transform .2s;
   }
   .photo:hover{transform:rotate(0deg) scale(1.03)}
